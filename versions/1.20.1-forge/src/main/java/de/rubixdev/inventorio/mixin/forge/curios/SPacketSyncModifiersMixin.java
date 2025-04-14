@@ -4,6 +4,7 @@ import de.rubixdev.inventorio.integration.curios.ICuriosContainer;
 import de.rubixdev.inventorio.util.CuriosTester;
 import me.fallenbreath.conditionalmixin.api.annotation.Condition;
 import me.fallenbreath.conditionalmixin.api.annotation.Restriction;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -33,6 +34,7 @@ public class SPacketSyncModifiersMixin {
         SPacketSyncModifiers data,
         LivingEntity livingEntity,
         Entity entity,
+        MinecraftClient client,
         ICuriosItemHandler handler,
         CallbackInfo ci
     ) {
